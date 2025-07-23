@@ -1,0 +1,66 @@
+.list-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  margin: 1.5rem auto;
+  padding: 1.5rem 2vw 1.5rem 2vw; /* Add left and right padding */
+  max-width: 50vw; /* Reduce max-width for more spacing */
+  width: 42vw;
+  overflow-x: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.brewery-list {
+  width: 60%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background: transparent;
+  min-width: 600px;
+}
+
+.brewery-list th,
+.brewery-list td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.brewery-list th {
+  background: #f3f4f6;
+  color: #22223b;
+  font-weight: 600;
+  top: 0;
+  z-index: 2; /* Ensure header stays above rows */
+}
+
+.brewery-list tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.brewery-list tr:hover {
+  background: #e0e7ef;
+}
+
+.search-filter-bar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.state-search-input {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.type-dropdown {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  background: #fff;
+}
