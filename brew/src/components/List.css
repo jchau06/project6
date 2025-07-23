@@ -3,9 +3,9 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
   margin: 1.5rem auto;
-  padding: 1.5rem 2vw 1.5rem 2vw; /* Add left and right padding */
+  padding: 1.5rem 2rem 1.5rem 2rem; /* Add left and right padding */
   max-width: 50vw; /* Reduce max-width for more spacing */
-  width: 42vw;
+  width: 46vw;
   overflow-x: auto;
   max-height: 90vh;
   overflow-y: auto;

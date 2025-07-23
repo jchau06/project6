@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './List.css';
 import getAllBreweries from '../functions/search_all.js';
+import { Link } from 'react-router-dom';
 
 function List() {
     const [allBreweries, setAllBreweries] = useState([]);
@@ -71,7 +72,11 @@ function List() {
                 <tbody>
                     {filteredBreweries.map((brewery) => (
                         <tr key={brewery.id}>
-                            <td>{brewery.name}</td>
+                            <td>
+                                <Link to={`/brewery/${brewery.id}`} className="brewery-link">
+                                    {brewery.name}
+                                </Link>
+                            </td>
                             <td>{brewery.brewery_type}</td>
                             <td>{brewery.city}</td>
                             <td>{brewery.state}</td>

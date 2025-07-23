@@ -1,0 +1,28 @@
+.background-wrapper {
+  position: relative; 
+  width: 100vw;      
+  overflow-y: auto;   /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  z-index: 0;
+  min-height: 100vh;
+}
+
+.background-wrapper::before {
+  content: "";
+  position: fixed;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: url("/ver-brewery.jpg") no-repeat center center/cover;
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none; 
+}
+
+.brewery-details {
+    background: rgba(0, 0, 0, 0.7); /* Opaque dark background */
+    color: #fff;                    /* White text */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    padding: 2rem 2vw 2rem 2vw;
+    margin: 2rem 22rem;
+    max-width: 600px;
+}
