@@ -4,6 +4,7 @@ import Header from './components/Header.jsx'
 import Card from './components/Card.jsx'
 import List from './components/List.jsx'
 import StateBarGraph from './components/StateBarGraph.jsx'
+import TypeBarGraph from './components/TypeBarGraph.jsx'
 // import getAllBreweries from './functions/search_all.js'
 // import groupBy from './functions/groupBy.js'
 
@@ -54,7 +55,7 @@ function App() {
         </div>
         <div className='graph-container'>
           <StateBarGraph/>
-          <StateBarGraph/>
+          <TypeBarGraph/>
         </div>
       </div>
     </div>

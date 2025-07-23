@@ -13,6 +13,7 @@ function List() {
         const breweries = await getAllBreweries();
         setAllBreweries(breweries);
         console.log(`Total breweries: ${breweries.length}`);
+        // getTop5BreweryTypes();
         } catch (error) {
         console.error('Error fetching breweries:', error);
         }

@@ -1,27 +1,27 @@
-import './StateBarGraph.css'
+import './TypeBarGraph.css'
 import React, { PureComponent } from 'react';
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
-    name: 'California',
-    "Number of Breweries": 918,
+    name: 'micro',
+    "Number of Breweries": 4311,
   },
   {
-    name: 'Washington',
-    "Number of Breweries": 486,
+    name: 'brewpub',
+    "Number of Breweries": 2524,
   },
   {
-    name: 'Colorado',
-    "Number of Breweries": 448,
+    name: 'planning',
+    "Number of Breweries": 674,
   },
   {
-    name: 'New York',
-    "Number of Breweries": 419,
+    name: 'closed',
+    "Number of Breweries": 246,
   },
   {
-    name: 'Michigan',
-    "Number of Breweries": 375,
+    name: 'regional',
+    "Number of Breweries": 228,
   },
 ];
 
@@ -30,8 +30,8 @@ export default class Example extends PureComponent {
 
   render() {
     return (
-      <div className="state-bar-graph-container">
-        <h2 className="chart-title">Top 5 States by Number of Breweries</h2>
+      <div className="type-bar-graph-container">
+        <h2 className="chart-title">Top 5 Types by Number of Breweries</h2>
         <BarChart
           width={600}
           height={300}
@@ -48,7 +48,7 @@ export default class Example extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="Number of Breweries" fill="#82ca9d" activeBar={<Rectangle fill="gold" stroke="purple" />} />
+          <Bar dataKey="Number of Breweries" fill="#C8A2C8" activeBar={<Rectangle fill="gold" stroke="purple" />} />
         </BarChart>
       </div>
     );
